@@ -1,4 +1,4 @@
-# ResuMeme
+# ResuMeme - Attract Employers, Not Glitches!
 
 Welcome to ResuMeme, where data meets dream jobs! ResuMeme is a unique app designed to provide personalized feedback on your current resume, specifically tailored for data science roles.
 
