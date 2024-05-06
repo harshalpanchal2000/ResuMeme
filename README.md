@@ -16,11 +16,11 @@ To get started with ResuMeme, simply [download the app](#) from the App Store or
 
 ## Contributing
 
-While ResuMeme primarily focuses on providing feedback to individual users' resumes, we welcome contributions from industry professionals to help improve our feedback algorithms and enhance the overall user experience. If you're interested in contributing, please reach out to us via [email](mailto:feedback@resumeme.com) for more information.
+While ResuMeme primarily focuses on providing feedback to individual users' resumes, we welcome contributions from industry professionals to help improve our feedback algorithms and enhance the overall user experience. If you're interested in contributing, please reach out to us via [email](mailto:contact@itsmeharshal.com) for more information.
 
 ## Support
 
-If you encounter any issues while using ResuMeme or have any questions, our support team is here to help! Please reach out to us via [email](mailto:support@resumeme.com) and we'll get back to you as soon as possible.
+If you encounter any issues while using ResuMeme or have any questions, our support team is here to help! Please reach out to us via [email](mailto:contact@itsmeharshal.com) and we'll get back to you as soon as possible.
 
 ## License
 
