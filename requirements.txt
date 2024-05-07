@@ -1,3 +1,4 @@
 streamlit 
 crewai
+crewai[tools]
 PyPDF2==1.26.0
