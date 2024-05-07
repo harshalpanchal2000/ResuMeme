@@ -2,6 +2,9 @@ import os
 import streamlit as st
 from crewai import Agent, Task, Crew, Process
 from PyPDF2 import PdfReader
+from crewai_tools import SerperDevTool
+
+search_tool = SerperDevTool()
 
 # Set OpenAI API key
 os.environ["OPENAI_API_KEY"] = "Your OpenAI API Key"
