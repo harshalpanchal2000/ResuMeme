@@ -1,10 +1,10 @@
+import os
 import streamlit as st
 from crewai import Agent, Task, Crew, Process
 from PyPDF2 import PdfReader
-import os
 
-# Retrieve OpenAI API key from environment variable
-openai_api_key = os.environ.get("OPENAI_API_KEY")
+# Set OpenAI API key
+os.environ["OPENAI_API_KEY"] = "Your OpenAI API Key"
 
 # Define agent roles
 data_scientist = Agent(
@@ -35,7 +35,7 @@ def get_resume_feedback(resume_path):
             resume_text += page.extract_text()
     
     # Simulate uploading resume and getting feedback
-    feedback = resume_crew.kickoff()
+    feedback = resume_crew.kickoff(inputs={'resume_text': resume_text})
     return feedback
 
 # Streamlit UI
