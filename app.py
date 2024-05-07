@@ -1,6 +1,10 @@
 import streamlit as st
 from crewai import Agent, Task, Crew, Process
 from PyPDF2 import PdfReader
+import os
+
+# Retrieve OpenAI API key from environment variable
+openai_api_key = os.environ.get("OPENAI_API_KEY")
 
 # Define agent roles
 data_scientist = Agent(
