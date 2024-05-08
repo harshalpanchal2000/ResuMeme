@@ -9,7 +9,7 @@ st.set_page_config(
 
 # Streamlit UI
 st.title('ResuMeme - Attract Employers,   Not Glitches!')
-st.subheader('Welcome to ResuMeme, where data meets dream jobs! ResuMeme is a unique app designed to provide personalized feedback on your current resume, specifically tailored for data science roles.')
+st.markdown(<p>'Welcome to ResuMeme, where data meets dream jobs! ResuMeme is a unique app designed to provide personalized feedback on your current resume, specifically tailored for data science roles.'</p>)
 
 uploaded_file = st.file_uploader("Upload your resume (PDF format)", type="pdf")
 
