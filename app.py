@@ -4,8 +4,7 @@ import streamlit as st
 st.set_page_config(
     page_title="ResuMeme - Attract Employers, Not Glitches!",
     page_icon=":clipboard:",
-    layout="wide",
-    initial_sidebar_state="expanded"
+    layout="wide"
 )
 
 # Streamlit UI
