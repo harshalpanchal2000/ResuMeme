@@ -32,7 +32,7 @@ if uploaded_file is not None:
 # Add attribution with left padding
 st.markdown(
     """<div style="position: fixed; bottom: 10px; width: 100%; text-align: center;">
-    <span style="padding-left: 20px;">Built by <a href="https://www.linkedin.com/in/harshal-panchal/" target="_blank">Harshal Panchal</a></span>
+    <span style="padding-left: 50px;">Built by <a href="https://www.linkedin.com/in/harshal-panchal/" target="_blank">Harshal Panchal</a></span>
     </div>""",
     unsafe_allow_html=True
 )
