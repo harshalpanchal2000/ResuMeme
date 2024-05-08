@@ -32,7 +32,7 @@ if uploaded_file is not None:
 
     # Add attribution
 st.markdown(
-    """<div style="position: fixed; bottom: 10px; width: 100%; text-align: center; padding-left: 30px;">
+    """<div style="position: fixed; bottom: 10px; width: 100%; text-align: center; padding-left: 37px;">
     Built by <a href="https://www.linkedin.com/in/harshal-panchal/" target="_blank">Harshal Panchal</a>
     </div>""",
     unsafe_allow_html=True
