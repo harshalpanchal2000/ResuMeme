@@ -2,7 +2,7 @@ import streamlit as st
 
 # Set page configuration
 st.set_page_config(
-    page_title="ResuMeme",
+    page_title="ResuMeme - Attract Employers, Not Glitches!",
     page_icon=":clipboard:",
     layout="wide",
     initial_sidebar_state="expanded"
