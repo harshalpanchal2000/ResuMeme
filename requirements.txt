@@ -1,5 +1,1 @@
-crewai
-crewai[tools]
-PyPDF2==1.26.0
-streamlit==0.89.0
-pysqlite3-binary==0.4.6
+streamlit 
