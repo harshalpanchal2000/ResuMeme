@@ -29,3 +29,11 @@ if uploaded_file is not None:
     # Display resume content
     st.subheader("Resume Content")
     st.write(resume_text)
+
+    # Add attribution
+st.markdown(
+    """<div style="position: fixed; bottom: 10px; width: 100%; text-align: center;">
+    Built by <a href="https://www.linkedin.com/in/harshal-panchal/" target="_blank">Harshal Panchal</a>
+    </div>""",
+    unsafe_allow_html=True
+)
