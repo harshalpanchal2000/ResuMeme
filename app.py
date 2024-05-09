@@ -37,5 +37,14 @@ def main():
     # Display link to authorize Resumeme
     st.markdown(auth_url, unsafe_allow_html=True)
 
+    # Capture user input for desired position and location
+    position = st.text_input("Enter the desired position:", "")
+    location = st.text_input("Enter the desired location:", "")
+
+    # Button to submit the search
+    if st.button("Search"):
+        # Perform search with the provided position and location
+        st.write("Performing search for position:", position, "in location:", location)
+
 if __name__ == "__main__":
     main()
