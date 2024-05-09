@@ -22,3 +22,18 @@ def authenticate():
 
     # Redirect user to OAuth authorization URL
     st.markdown(f"Click [here]({authorization_url}) to authenticate with Indeed.")
+
+# Set page configuration
+st.set_page_config(page_title="ResumeMe", page_icon=":briefcase:", layout="wide")
+
+# Main Streamlit UI
+def main():
+    st.title("ResumeMe: Your Job Application Assistant")
+    st.subheader("Automate your job application process with ease!")
+
+    # Authentication
+    authenticate()
+
+# Run the app
+if __name__ == "__main__":
+    main()
