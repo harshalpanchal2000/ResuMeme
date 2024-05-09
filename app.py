@@ -3,7 +3,7 @@ from urllib.parse import urlencode
 
 def authenticate():
     # Indeed OAuth authorization URL
-    oauth_url = "https://secure.indeed.com/account/login/oauth2/auth"
+    oauth_url = "https://secure.indeed.com/oauth/v2/authorize"
 
     # OAuth client credentials (replace with your credentials)
     client_id = "e5b55c005f62d4c5c32ae11ed9a0df3c132d94b2627d2dc9bcf473823fcd1022"
