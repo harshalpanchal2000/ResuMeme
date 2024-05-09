@@ -14,6 +14,7 @@ def generate_code_verifier_and_challenge():
 # Streamlit app
 def main():
     st.title("Resumeme - Indeed OAuth")
+    st.subheader("Connect your Resumeme account with Indeed")
 
     # Replace with your client ID and redirect URI
     client_id = "e5b55c005f62d4c5c32ae11ed9a0df3c132d94b2627d2dc9bcf473823fcd1022"
@@ -34,11 +35,8 @@ def main():
     auth_url = f"{authorization_url}?{urlencode(params)}"
 
     # Display authorization URL
-    st.write("Authorization URL:", auth_url)
-
-    # You can redirect the user to this URL for authorization
-    # You'll need to handle the authorization code returned from Indeed
-    # and exchange it for an access token using the code verifier
+    st.write("Click below to authorize Resumeme to access your Indeed account:")
+    st.write(auth_url)
 
 if __name__ == "__main__":
     main()
