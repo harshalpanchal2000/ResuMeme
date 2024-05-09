@@ -34,10 +34,11 @@ def main():
     }
     auth_url = f"{authorization_url}?{urlencode(params)}"
 
-    # Display authorization URL
-    st.write("Click below to authorize Resumeme to access your Indeed account:")
-    st.write(auth_url)
+    # Display button to authorize Resumeme
+    if st.button("Authorize Resumeme to access your Indeed account"):
+        st.write("Redirecting to Indeed...")
+        # Redirect user to authorization URL
+        st.experimental_rerun()
 
 if __name__ == "__main__":
     main()
-
