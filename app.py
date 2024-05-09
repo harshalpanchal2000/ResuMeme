@@ -1,38 +1,24 @@
 import streamlit as st
+from urllib.parse import urlencode
 
-# Set page configuration
-st.set_page_config(
-    page_title="ResuMeme",
-    page_icon=":clipboard:",
-    initial_sidebar_state="expanded"
-)
+# Function to authenticate with Indeed API using OAuth
+def authenticate():
+    # Indeed OAuth authorization URL
+    oauth_url = "https://secure.indeed.com/account/login/oauth2/auth"
 
-# Streamlit UI
-st.title('ResuMeme - Attract Employers,   Not Glitches!')
-st.markdown("Welcome to ResuMeme, where data meets dream jobs! ResuMeme is a unique app designed to provide personalized feedback on your current resume, specifically tailored for data science roles.")
+    # OAuth client credentials (replace with your credentials)
+    client_id = "e5b55c005f62d4c5c32ae11ed9a0df3c132d94b2627d2dc9bcf473823fcd1022"
+    redirect_uri = "https://ca.indeed.com/"  # Redirect URI registered with Indeed
+    scope = "apply"  # Scopes required by your application
 
-uploaded_file = st.file_uploader("Upload your resume (PDF format)", type="pdf")
+    # Construct OAuth authorization URL
+    params = {
+        "client_id": client_id,
+        "redirect_uri": redirect_uri,
+        "scope": scope,
+        "response_type": "code"
+    }
+    authorization_url = f"{oauth_url}?{urlencode(params)}"
 
-if uploaded_file is not None:
-    st.write("Resume Uploaded Successfully!")
-
-    # Display uploaded resume
-    st.subheader("Uploaded Resume")
-    st.write(uploaded_file)
-
-    # Read PDF content
-    resume_text = ""
-    with uploaded_file:
-        resume_text = uploaded_file.read().decode("utf-8")
-
-    # Display resume content
-    st.subheader("Resume Content")
-    st.write(resume_text)
-
-# Add attribution with left padding
-st.markdown(
-    """<div style="position: fixed; bottom: 10px; width: 100%; text-align: center;">
-    <span style="padding-right: 850px;">Built by <a href="https://www.linkedin.com/in/harshal-panchal/" target="_blank">Harshal Panchal</a></span>
-    </div>""",
-    unsafe_allow_html=True
-)
+    # Redirect user to OAuth authorization URL
+    st.markdown(f"Click [here]({authorization_url}) to authenticate with Indeed.")
