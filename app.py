@@ -1,7 +1,6 @@
 import streamlit as st
 from urllib.parse import urlencode
 
-# Function to authenticate with Indeed API using OAuth
 def authenticate():
     # Indeed OAuth authorization URL
     oauth_url = "https://secure.indeed.com/account/login/oauth2/auth"
@@ -23,17 +22,16 @@ def authenticate():
     # Redirect user to OAuth authorization URL
     st.markdown(f"Click [here]({authorization_url}) to authenticate with Indeed.")
 
-# Set page configuration
-st.set_page_config(page_title="ResumeMe", page_icon=":briefcase:", layout="wide")
-
-# Main Streamlit UI
 def main():
-    st.title("ResumeMe: Your Job Application Assistant")
-    st.subheader("Automate your job application process with ease!")
-
-    # Authentication
+    st.title("Resumeme: Your Job Application Assistant")
+    st.subheader("Unique app designed to provide personalized feedback on resumes tailored for data science roles.")
+    
+    # Add OAuth authentication
     authenticate()
+    
+    # Add more Streamlit components as needed
+    st.write("Welcome to Resumeme! This app will help you improve your resume for data science roles.")
+    st.write("Get started by uploading your resume and receiving personalized feedback.")
 
-# Run the app
 if __name__ == "__main__":
     main()
