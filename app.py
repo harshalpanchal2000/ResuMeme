@@ -32,13 +32,10 @@ def main():
         "code_challenge": code_challenge.decode(),
         "code_challenge_method": "S256"  # SHA256 method
     }
-    auth_url = f"{authorization_url}?{urlencode(params)}"
+    auth_url = f"[Authorize Resumeme to access your Indeed account]({authorization_url}?{urlencode(params)})"
 
-    # Display button to authorize Resumeme
-    if st.button("Authorize Resumeme to access your Indeed account"):
-        st.write("Redirecting to Indeed...")
-        # Redirect user to authorization URL
-        st.experimental_rerun()
+    # Display link to authorize Resumeme
+    st.markdown(auth_url, unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
