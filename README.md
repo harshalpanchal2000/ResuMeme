@@ -9,7 +9,7 @@ Welcome to ResuMeme, where data meets dream jobs! ResuMeme is a unique app desig
 - **Meme-Inspired Tips**: We believe in making resume feedback fun and engaging! Our app incorporates meme-inspired tips and tricks to keep you motivated while enhancing your resume.
 - **Easy-to-Use Interface**: Our intuitive interface makes it easy to upload your resume, view feedback, and make necessary adjustments to improve your chances of landing your dream job.
 - **Confidential and Secure**: Rest assured that your personal information and resume data are kept confidential and secure at all times.
-
+h
 ## Getting Started
 
 To get started with ResuMeme, simply [download the app](#) from the App Store or Google Play Store and follow the on-screen instructions to set up your account. Once logged in, upload your current resume and receive instant feedback to help you enhance your job application.
